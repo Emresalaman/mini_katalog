@@ -1,0 +1,68 @@
+import '../models/product.dart';
+
+final List<Product> sampleProducts = [
+  Product(
+    id: 1,
+    name: 'Slim Fit Erkek Gömlek',
+    price: '349',
+    image: 'https://fakestoreapi.com/img/81fAn1GWnqL._AC_UL1500_.jpg',
+    description: 'Pamuklu, slim fit kesimli erkek gömleği. Günlük ve resmi kullanıma uygun.',
+    category: 'Erkek Giyim',
+  ),
+  Product(
+    id: 2,
+    name: 'Kadın Kısa Kollu T-Shirt',
+    price: '199',
+    image: 'https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg',
+    description: 'Nefes alabilen kumaştan üretilmiş, şık kadın t-shirt.',
+    category: 'Kadın Giyim',
+  ),
+  Product(
+    id: 3,
+    name: 'Altın Bileklik',
+    price: '899',
+    image: 'https://fakestoreapi.com/img/71YAIFU48IL._AC_UL1500_.jpg',
+    description: 'Altın kaplama, zarif tasarımlı kadın bilekliği.',
+    category: 'Takı',
+  ),
+  Product(
+    id: 4,
+    name: 'Gümüş Kolye',
+    price: '649',
+    image: 'https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_FMwebp_QL65_.jpg',
+    description: 'Gümüş kaplama zincir kolye, özel günler için ideal.',
+    category: 'Takı',
+  ),
+  Product(
+    id: 5,
+    name: 'Akıllı Saat',
+    price: '2499',
+    image: 'https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg',
+    description: 'Kalp atışı takibi, adım sayar ve bildirim özellikli akıllı saat.',
+    category: 'Elektronik',
+  ),
+  Product(
+    id: 6,
+    name: 'Bluetooth Kulaklık',
+    price: '1299',
+    image: 'https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg',
+    description: 'Gürültü engelleme teknolojili kablosuz bluetooth kulaklık.',
+    category: 'Elektronik',
+  ),
+  Product(
+    id: 7,
+    name: 'Laptop Çantası',
+    price: '459',
+    image: 'https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg',
+    description: '15.6 inç laptop uyumlu, su geçirmez sırt çantası.',
+    category: 'Aksesuar',
+  ),
+  Product(
+    id: 8,
+    name: 'Erkek Sweatshirt',
+    price: '529',
+    image: 'https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg',
+    description: 'Kapüşonlu, polar astarli erkek sweatshirt. Sonbahar/kış için ideal.',
+    category: 'Erkek Giyim',
+  ),
+];
