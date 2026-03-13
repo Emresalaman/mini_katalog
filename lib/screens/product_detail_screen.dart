@@ -65,7 +65,7 @@ class ProductDetailScreen extends StatelessWidget {
                     ),
                   const SizedBox(height: 12),
                   Text(
-                    '${product.price} TL',
+                    '${product.price} USDT',
                     style: const TextStyle(
                       fontSize: 22,
                       color: Colors.deepPurple,
@@ -94,7 +94,7 @@ class ProductDetailScreen extends StatelessWidget {
                     children: [
                       _infoBox('Kategori', product.category.isNotEmpty ? product.category : '-'),
                       const SizedBox(width: 10),
-                      _infoBox('Fiyat', '${product.price} TL'),
+                      _infoBox('Fiyat', '${product.price} USDT'),
                       const SizedBox(width: 10),
                       _infoBox('Stok', 'Mevcut'),
                     ],

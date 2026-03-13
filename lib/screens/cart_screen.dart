@@ -16,7 +16,10 @@ class _CartScreenState extends State<CartScreen> {
   Widget build(BuildContext context) {
     final total = widget.cart.fold<double>(
       0,
-      (sum, p) => sum + (double.tryParse(p.price) ?? 0),
+      (sum, p) {
+        final clean = p.price.replaceAll(',', '.').replaceAll(RegExp(r'[^\d.]'), '');
+        return sum + (double.tryParse(clean) ?? 0);
+      },
     );
 
     return Scaffold(
@@ -85,7 +88,7 @@ class _CartScreenState extends State<CartScreen> {
                           overflow: TextOverflow.ellipsis,
                         ),
                         subtitle: Text(
-                          '${product.price} TL',
+                          '${product.price} USDT',
                           style: const TextStyle(color: Colors.deepPurple),
                         ),
                         trailing: IconButton(
@@ -119,7 +122,7 @@ class _CartScreenState extends State<CartScreen> {
                         children: [
                           const Text('Toplam', style: TextStyle(fontSize: 16)),
                           Text(
-                            '${total.toStringAsFixed(2)} TL',
+                            '${total.toStringAsFixed(2)} USDT',
                             style: const TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,

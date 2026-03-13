@@ -34,7 +34,13 @@ Flutter 3.22.1
 
 ## Ekran Görüntüleri
 
-<!-- Ekran görüntülerini screenshots/ klasörüne koyup buraya ekleyin -->
+| Ana Sayfa | Ürün Detay |
+|-----------|------------|
+| ![Ana Sayfa](screenshots/home.png) | ![Detay](screenshots/detail.png) |
+
+| Sepet (Dolu) | Sepet (Boş) |
+|--------------|-------------|
+| ![Sepet Dolu](screenshots/cart_full.png) | ![Sepet Boş](screenshots/cart_empty.png) |
 
 ## Kullanılan Teknolojiler
 
